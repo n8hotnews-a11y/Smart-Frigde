@@ -9,24 +9,12 @@ import Nutrition from './components/Nutrition';
 import Chatbot from './components/Chatbot';
 import AuthScreen from './components/AuthScreen';
 
-// Mock Data (will be used after login)
-const MOCK_FOOD_ITEMS: FoodItem[] = [
-  { id: '1', name: 'Thịt heo', quantity: '500g', expiryDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(), storage: 'Tủ đông' },
-  { id: '2', name: 'Trứng gà', quantity: '12 quả', expiryDate: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000).toISOString(), storage: 'Tủ lạnh' },
-  { id: '3', name: 'Cà chua', quantity: '5 quả', expiryDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(), storage: 'Tủ lạnh' },
-];
-
-const MOCK_FAMILY_MEMBERS: FamilyMember[] = [
-  { id: '1', name: 'Bố Hùng', age: 45, goal: 'Duy trì sức khỏe' },
-  { id: '2', name: 'Mẹ Lan', age: 42, goal: 'Giảm cân' },
-];
-
 const App: React.FC = () => {
   const [user, setUser] = useState<any | null>(null);
   const [isAuthLoading, setIsAuthLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<Tab>(Tab.Dashboard);
-  const [foodItems, setFoodItems] = useState<FoodItem[]>(MOCK_FOOD_ITEMS);
-  const [familyMembers, setFamilyMembers] = useState<FamilyMember[]>(MOCK_FAMILY_MEMBERS);
+  const [foodItems, setFoodItems] = useState<FoodItem[]>([]);
+  const [familyMembers, setFamilyMembers] = useState<FamilyMember[]>([]);
 
   useEffect(() => {
     const unsubscribe = onAuthChange((firebaseUser) => {
