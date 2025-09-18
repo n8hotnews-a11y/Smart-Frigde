@@ -1,0 +1,7 @@
+{
+  "name": "Trợ lý Dinh dưỡng Gia đình AI",
+  "description": "Một ứng dụng thông minh giúp các bà nội trợ trẻ Việt Nam quản lý thực phẩm, đề xuất món ăn, theo dõi dinh dưỡng và nhận tư vấn từ trợ lý AI. Giảm lãng phí, ăn uống lành mạnh hơn và tiết kiệm thời gian.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
