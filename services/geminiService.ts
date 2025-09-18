@@ -1,4 +1,3 @@
-const API_URL = 'https://smart-frigde.onrender.com';
 
 import { GoogleGenAI, Chat, Type, GenerateContentResponse } from "@google/genai";
 import { FoodItem, MealSuggestion, FamilyMember } from '../types';
