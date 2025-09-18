@@ -1,1 +1,20 @@
-full contents of manifest.json
+{
+  "short_name": "Dinh dưỡng AI",
+  "name": "Trợ lý Dinh dưỡng Gia đình AI",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFFDF9",
+  "background_color": "#FFFDF9",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
